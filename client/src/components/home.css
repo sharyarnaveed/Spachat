@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: 'headings';
+    src: url('../fonts/BoredRegular-nga4.otf') format('opentype');
+    
+}
+
+@font-face {
+    font-family: 'paragraph';
+    src: url('../fonts/ZenDots-Regular.ttf') format('truetype');
+}
+
+
+:root
+{
+    --green:#07393C;
+    --black:#0A090C;
+    --headings:'headings', sans-serif; 
+    --paragraph:'paragraph', serif;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main
+{
+    height: 100vh;
+  
+}
+.intro_section
+{
+
+    height: 89%;
+}
+.into_image_text
+{
+   
+    height: 85%;
+    display: flex;
+}
+.intro_text
+{
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+}
+.intro_text h1
+{
+    font-size: 3rem;
+    font-family: var(--headings);
+    letter-spacing: 5px;
+    color: #0A090C;
+    font-weight: 500;
+}
+.intro_text h1 span
+{
+    color: var(--green);
+}
+.intro_image
+{
+  
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro_buttons
+{
+
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+.intro_buttons button
+{
+width: 15%;
+height: 70%;
+font-size: 1.09rem;
+font-family: var(--headings);
+cursor: pointer;
+}
+#learn_more
+{
+    background-color: white;
+    border: 3px solid var(--green);
+    border-style: dotted;
+
+}
+#learn_more:hover
+{
+    background-color: var(--black);
+    color: white;
+    border: 3px solid white;
+    border-style: dotted;
+}
+#download_now
+{
+    background-color: var(--green);
+    color: white;
+    border: 2px solid white;
+    border-style: dotted;
+    
+}
+#download_now:hover
+{
+    background-color: var(--black);
+    color: white;
+    border: 3px solid white;
+    border-style: dotted;
+}
+
+.about_application
+{
+ 
+    height: 100vh;
+    background-color: #07393C;
+padding: 25px 20px;
+}
+.about_application h1
+{
+    font-size: 2.3rem;
+    font-family: var(--headings);
+    margin: 10px 10px;
+    font-weight: 300;
+    color: white;
+}
+.about_application p
+{   margin: 5px 10px;
+font-size: 1.1rem;
+line-height: 25px;
+letter-spacing: 2px;
+color: white;
+font-family: var(--paragraph);
+}

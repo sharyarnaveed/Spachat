@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'headings';
+    src: url('../fonts/BoredRegular-nga4.otf') format('opentype');
+    
+}
+
+@font-face {
+    font-family: 'paragraph';
+    src: url('../fonts/ZenDots-Regular.ttf') format('truetype');
+}
+
+
+:root
+{
+    --green:#07393C;
+    --black:#0A090C;
+    --headings:'headings', sans-serif; 
+    --paragraph:'paragraph', serif;  
+}
+
+
+.features_container
+{
+    height: 89vh;
+    width: 100%;
+
+background-color: #07393C;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.feature_cards
+{
+ 
+height:220px ;
+border-radius: 15px;
+width: 250px;
+display: flex;
+flex-direction: column;
+background-color: white;
+}
+.card_logo
+{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    height: 20%;
+}
+.card_logo h4
+{
+    font-family: var(--headings);
+    font-weight: 100;
+}
+.card_logo svg
+{
+    height: 100%;
+}
+.written_content
+{
+   padding: 5px 10px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.written_content p
+{
+    font-size: 16px;
+font-family: var(--paragraph);
+}

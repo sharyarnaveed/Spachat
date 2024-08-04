@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'headings';
+    src: url('../fonts/BoredRegular-nga4.otf') format('opentype');
+    
+}
+
+@font-face {
+    font-family: 'paragraph';
+    src: url('../fonts/ZenDots-Regular.ttf') format('truetype');
+}
+
+
+:root
+{
+    --green:#07393C;
+    --black:#0A090C;
+    --headings:'headings', sans-serif; 
+    --paragraph:'paragraph', serif;  
+}
+
+*
+{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+.signin_conatiner
+{
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--green);
+    display: flex;
+    
+}
+.signinimage
+{
+   
+    width: 45%;
+}
+.signinimage img
+{
+    width: 100%;
+    height: 100%;
+}
+.signinform
+{
+   
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+}
+.welcome_text
+{
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    padding: 0px 40px;
+    font-size: 1.1rem;
+   
+}
+.welcome_text h1{
+    font-family: var(--headings);
+    color: white;
+    font-weight: 100;
+    margin: 0px 10%;
+    letter-spacing: 3px;
+}
+.siginform
+{
+
+    display: flex;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+
+}
+.siginform_input
+{
+width: 50%;
+font-size: 18px;
+height: 11%;
+border-radius: 10px;
+border: none;
+outline: none;
+font-family: var(--paragraph);
+padding: 2px 5px;
+margin: 25px 15%;
+}
+
+.siginform_submit
+{
+    width: 20%;
+    height: 13%;
+    margin: 25px 30%;
+    border-radius: 18px;
+    border: none;
+    background-color: #F0EDEE;
+    font-size: 20px;
+    font-family: var(--headings);
+    cursor: pointer;
+   
+}
+.siginform_submit:hover
+{
+    background-color: #0A090C;
+    color: white;
+}
+.signup_link
+{
+
+    width: 100%;
+    height: 10%;
+    padding: 0px 20%;
+    
+}
+.signup_link p
+{
+    font-size: 1.07rem;
+font-family: var(--paragraph);
+color: white;
+}
+.signup_routerlink
+{
+    color: rgba(255, 255, 255, 0.555);
+}
+.signup_routerlink:hover
+{
+    color: black;
+}
+
+
+
+
+/* sign up */
+
+.signup_container
+{
+  overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #0A090C;
+    display: flex;
+    
+}
+.signup_image
+{
+    width: 45%;
+   
+}
+.signup_image img
+{
+    width: 95%;
+    height: 100%;
+}
+.signup_form_contain
+{
+   
+    width: 55%;
+    display: flex;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  
+}
+.sigupform
+{
+    height: 75%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,auto);
+    
+}
+.sigupform_input
+{
+    width: 80%;
+font-size: 18px;
+height: 50%;
+border-radius: 8px;
+border: none;
+outline: none;
+font-family: var(--paragraph);
+padding: 2px 5px;
+margin: 25px 15%;
+}
+.sigunform_submit
+{
+    width: 40%;
+    height: 50%;
+    margin: 25px 30%;
+    border-radius: 18px;
+    border: none;
+    background-color: #F0EDEE;
+    font-size: 20px;
+    font-family: var(--headings);
+    cursor: pointer;
+}
+.signin_link
+{
+    margin: 7px 12%;
+    width: 100%;
+    height: 10%;
+    padding: 0px 3%;
+}
+.signin_link p
+{
+    font-size: 1.07rem;
+font-family: var(--paragraph);
+color: white;
+}
+
+.signin_routerlink
+{
+    color: rgba(255, 255, 255, 0.555);
+}
+.signin_routerlink:hover
+{
+    color: white;
+}
+
+
+.tyeconfirmmessgea{
+ 
+    height: 12vh;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tyeconfirmmessgea h2
+{
+    color: white;
+    font-family: var(--paragraph);
+    letter-spacing: 3px;
+font-size: 30px;
+font-weight: 100;
+}
+
+.tyeerrormessgea{
+ 
+    height: 12vh;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color:rgb(226, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tyeerrormessgea h2
+{
+    color: white;
+    font-family: var(--paragraph);
+    letter-spacing: 3px;
+font-size: 30px;
+font-weight: 100;
+}

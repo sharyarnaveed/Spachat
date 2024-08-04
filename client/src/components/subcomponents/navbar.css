@@ -1,0 +1,186 @@
+
+
+@font-face {
+    font-family: 'headings';
+    src: url('../fonts/BoredRegular-nga4.otf') format('opentype');
+    
+}
+
+@font-face {
+    font-family: 'paragraph';
+    src: url('../fonts/ZenDots-Regular.ttf') format('truetype');
+}
+
+
+:root
+{
+    --green:#07393C;
+    --black:#0A090C;
+    --headings:'headings', sans-serif; 
+    --paragraph:'paragraph', serif;  
+}
+
+header
+{
+
+    border-bottom: 2px solid var(--green);
+    height: 70px;
+
+}
+
+nav
+{
+ 
+    height: 100%;
+    display: flex;
+
+
+}
+.logo
+{
+   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.the_logo
+{
+    width: 100%;
+   
+    font-family: var(--headings);
+    height: 100%;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav_options
+{
+  
+    width: 80%;
+    display: flex;
+}
+.nav_option_1
+{
+   
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.the_nav_options
+{
+ 
+    list-style: none;
+    height: 80%;
+    text-decoration: none;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: var(--headings);
+    color: var(--black);
+}
+.the_nav_options:hover
+{
+    border: 3px solid var(--green);
+    border-style: dotted;
+}
+
+
+
+
+.nav_option_2
+{
+   
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.the_nav_option
+{
+    list-style: none;
+    height: 80%;
+    width: 70%;
+    border-radius: 18px;
+    background-color: var(--green);
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--headings);
+    color: white;
+}
+.the_nav_option:hover
+{
+    background-color: var(--black);
+    color: white;
+    opacity: .8;
+}
+
+
+
+
+
+
+
+/* footer */
+
+footer
+{
+    
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+.top_part_footer
+{
+
+height: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.top_part_footer
+h1
+{
+    font-family: var(--headings);
+    background-color: white;
+}
+
+
+
+.bottom_part_footer
+{
+    
+    height: 75%;
+    background-color: var(--green);
+}
+
+.footer_options
+{
+
+   height: 100%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.footer_options ul li
+{
+    color: white;
+}
